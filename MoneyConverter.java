@@ -14,11 +14,11 @@ public class MoneyConverter {
         int newtotal = total * 2;
         //these next lines calculate the amount of each coin in the total and prints them
         int quarters = (int) (total / 25);
-        total = total - (quarters * 25);
+        total -= (quarters * 25);
         int dimes = (int) (total / 10);
-        total = total - (dimes * 10);
+        total -= (dimes * 10);
         int nickels = (int) (total / 5);
-        total = total - (nickels * 5);
+        total -= (nickels * 5);
         int pennies = total;
         System.out.println("Total quarters: " + quarters);
         System.out.println("Total dimes: " + dimes);
@@ -52,11 +52,11 @@ public class MoneyConverter {
         if (randomint == 1) {
             System.out.println("You win!");
             int newquarters = (int) (newtotal / 25);
-            newtotal = newtotal - (newquarters * 25);
+            newtotal -= (newquarters * 25);
             int newdimes = (int) (newtotal / 10);
-            newtotal = newtotal - (newdimes * 10);
+            newtotal -= (newdimes * 10);
             int newnickels = (int) (newtotal / 5);
-            newtotal = newtotal - (newnickels * 5);
+            newtotal -= (newnickels * 5);
             int newpennies = newtotal;
             System.out.println("Total quarters: " + newquarters);
             System.out.println("Total dimes: " + newdimes);
