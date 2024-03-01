@@ -8,7 +8,7 @@ public class BadSubscriptCaught {
         for (int i = 0; i < 10; i++){
             System.out.print(listNames[i] + ", ");
         }
-        System.out.println("0, 1, 2, 3, 4, 5, 6, 7, 8, 9)");
+        System.out.println("(0, 1, 2, 3, 4, 5, 6, 7, 8, 9)");
         boolean validAnswer = false;
         while (!validAnswer) {
         System.out.println("Give an integer value for the position of the name you want printed: ");
