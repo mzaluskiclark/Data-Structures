@@ -101,8 +101,10 @@ public class DemoPizza extends JFrame implements ActionListener {
                     //displays pizza totals for price
                     JOptionPane.showMessageDialog(this, userPizza + "\nYou did not opt for delivery.\n" + "Your grand total is: $"+ userPizza.getPizzaPrice());
                 }
+                //catches number format error
             } catch (NumberFormatException ex) {
                 JOptionPane.showMessageDialog(this, "Invalid input. Please enter a valid integer for distance.");
+                //catches null error
             } catch (NullPointerException ex) {
                 JOptionPane.showMessageDialog(this, "Null input error. Please enter all required information.");
             }
